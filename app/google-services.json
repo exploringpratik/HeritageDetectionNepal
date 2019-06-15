@@ -1,0 +1,102 @@
+{
+  "project_info": {
+    "project_number": "837416593144",
+    "firebase_url": "https://ghumau-e7988.firebaseio.com",
+    "project_id": "ghumau-e7988",
+    "storage_bucket": "ghumau-e7988.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837416593144:android:db4c7b47a9c829c0",
+        "android_client_info": {
+          "package_name": "com.example.objectdetection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837416593144-1ano63oqdvhks2h46l716gin5q7lc882.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.objectdetection",
+            "certificate_hash": "081a0eaad850ca2c45bcede9622225d61a767823"
+          }
+        },
+        {
+          "client_id": "837416593144-0do0atacjum7i4jimc1a16e72o45q7js.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaAovZJjKpJibpMh57QTQXKrgK3YFiH1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837416593144-dee628vtp1k2o7stn7itsf9ajdovt4s4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837416593144:android:292bb50d97c42959",
+        "android_client_info": {
+          "package_name": "com.pratik.ghuamunepal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837416593144-5diioe0d36qa92dpf705slm632n0qm9v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pratik.ghuamunepal",
+            "certificate_hash": "081a0eaad850ca2c45bcede9622225d61a767823"
+          }
+        },
+        {
+          "client_id": "837416593144-fgmghhud5rtd7ifj7vpe9piot2kbmj58.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pratik.ghuamunepal",
+            "certificate_hash": "08f1f587dbd53785af44b0541dfac93ea449f2e5"
+          }
+        },
+        {
+          "client_id": "837416593144-s7hejp77v171sejo532f0kml5ak5a27d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pratik.ghuamunepal",
+            "certificate_hash": "c56062fa9f9b9bc954d8f2321e4698cf75099380"
+          }
+        },
+        {
+          "client_id": "837416593144-0do0atacjum7i4jimc1a16e72o45q7js.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaAovZJjKpJibpMh57QTQXKrgK3YFiH1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837416593144-dee628vtp1k2o7stn7itsf9ajdovt4s4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-5921299312285869~7197496849"
+    }
+  ],
+  "configuration_version": "1"
+}
