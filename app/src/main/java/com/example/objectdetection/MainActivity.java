@@ -139,5 +139,32 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+//        super.onActivityResult(requestCode, resultCode, data);
+//        // if the camera activity is finished, obtained the uri, crop it to make it square, and send it to 'Classify' activity
+//        if(requestCode == REQUEST_IMAGE && resultCode == RESULT_OK) {
+//            try {
+//                Uri source_uri = imageUri;
+//                Uri dest_uri = Uri.fromFile(new File(getCacheDir(), "cropped"));
+//                // need to crop it to square image as CNN's always required square input
+//                Crop.of(source_uri, dest_uri).asSquare().start(MainActivity.this);
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+//        }
+//
+//        // if cropping acitivty is finished, get the resulting cropped image uri and send it to 'Classify' activity
+//        else if(requestCode == Crop.REQUEST_CROP && resultCode == RESULT_OK){
+//            imageUri = Crop.getOutput(data);
+//            Intent i = new Intent(MainActivity.this, VisionImage.class);
+//            // put image data in extras to send
+//            i.putExtra("resID_uri", imageUri);
+//
+//            startActivity(i);
+//        }
+//    }
 }
 

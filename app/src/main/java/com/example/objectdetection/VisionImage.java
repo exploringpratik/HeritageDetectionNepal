@@ -57,7 +57,7 @@ public class VisionImage extends AppCompatActivity {
         try {
             bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
             selected_image.setImageBitmap(bitmap);
-            selected_image.setRotation(selected_image.getRotation() + 90);
+            // selected_image.setRotation(selected_image.getRotation() + 90);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -98,16 +98,20 @@ public class VisionImage extends AppCompatActivity {
                     .addOnSuccessListener(new OnSuccessListener<List<FirebaseVisionImageLabel>>() {
                         @Override
                         public void onSuccess(List<FirebaseVisionImageLabel> labels) {
-                            String text[] = new String[10];
-                            float confidence[] = new float[10];
+                            String text = "None ";
+                            float confidence = 0;
                             int i = 0;
                             for (FirebaseVisionImageLabel label : labels) {
-                                text[i] = label.getText();
-                                confidence[i] = label.getConfidence();
-                               textView.setText("S No. "+i +" "+ text[i]+" "+confidence[i]);
-                               i = i+1;
-                            }
+                                text = label.getText();
+                                confidence = label.getConfidence();
+                                i = i + 1;
 
+
+                            }
+                            String s = text + " " + confidence;
+
+                            textView.setText(s);
+                            Log.d(TAG, "onSuccess: ");
 
                             // ...
                         }
