@@ -108,12 +108,27 @@ public class VisionImage extends AppCompatActivity {
 
 
                             }
-                            String s = text + " " + confidence;
+                            String s = "";
+                            if (confidence > 0.65) {
+                                if (text.equals("nyatapola")) {
+                                    s = "It is a  Nyatapola Temple. Temple is a 5-storeyed (Nyata \"ङाता\" = 5 Storeys \"तल्ला & Pola \"पोलँ\" = Roof \"छाना\") Hindu temple. Meaning is Five Storeys Roofed Temple. Pagoda Style temple located in Bhaktapur, Nepal. The temple was erected by Nepali King Bhupatindra Malla during a 7-month period from late 1702 to 1703. It is the temple of Siddhi Lakshmi, the Tantric Lakshmi who bestows auspiciousness. You should be able to see the sky-high rooftop of the Nyatapola Temple long before you reach Taumadhi Tole. With five storeys towering 30m above the square, this is the tallest temple in all of Nepal and one of the tallest buildings in the Kathmandu Valley. This perfectly proportioned temple was built in 1702 during the reign of King Bhupatindra Malla, and the construction was so sturdy that the 1934 and 2015 earthquakes caused only minor damage.";
+                                } else if (text.equals("bodha")) {
+                                    s = "Its Boudhanath Stupa. Boudhanath (Nepali: बौद्ध स्तुपा, also called the Khāsa Chaitya, Nepal Bhasa Khāsti, Prachalit Nepal alphabet : \uD805\uDC0F\uD805\uDC35\uD805\uDC33\uD805\uDC42\uD805\uDC1F\uD805\uDC36 \uD805\uDC29\uD805\uDC35\uD805\uDC34\uD805\uDC35\uD805\uDC14\uD805\uDC3F\uD805\uDC1F\uD805\uDC42\uD805\uDC2B, Standard Tibetan Jarung Khashor, Wylie: bya rung kha shor) is a stupa in Kathmandu, Nepal.[2] Located about 11 km (6.8 mi) from the center and northeastern outskirts of Kathmandu, the stupa's massive mandala makes it one of the largest spherical stupas in Nepal.[3]\n" +
+                                            "\n" +
+                                            "The Buddhist stupa of Boudha Stupa dominates the skyline; it is one of the largest unique structure's stupas in the world. The influx of large populations of refugees from Tibet has seen the construction of over 50 gompas (Tibetan convent) around Boudha. As of 1979, Boudha Stupa is a UNESCO World Heritage Site. Along with Swayambhu, it is one of the most popular tourist sites in the Kathmandu area.\n" +
+                                            "\n" +
+                                            "The Stupa is on the ancient trade route from Tibet which enters the Kathmandu Valley by the village of Sankhu in the northeast corner, passes by Boudha Stupa to the ancient and smaller stupa of Chā-bahī named Charumati Stupa (often called \"Little Boudhanath\"). It then turns directly south, heading over the Bagmati River to Lalitpur – thus bypassing the main city of Kathmandu (which was a later foundation).[2] Tibetan merchants have rested and offered prayers here for many centuries. When refugees entered Nepal from Tibet in the 1950s, many decided to live around Boudhanath. The Stupa is said to entomb the remains of Kassapa Buddha.";
+                                } else {
+                                    s = "Could not detect";
+                                }
 
+                                Log.d(TAG, "onSuccess: ");
+
+                                // ...
+                            } else {
+                                s = "Couldnot Detect";
+                            }
                             textView.setText(s);
-                            Log.d(TAG, "onSuccess: ");
-
-                            // ...
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {
